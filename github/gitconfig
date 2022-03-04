@@ -1,0 +1,9 @@
+[user]
+  name = "jopetty"
+  email = "research@jacksonpetty.org"
+
+[core]
+  excludesfile = "~/.gitignore"
+
+[init]
+  defaultBranch = "main"
