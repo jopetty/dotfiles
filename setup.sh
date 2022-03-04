@@ -61,7 +61,7 @@ if test ! $(which brew); then
 fi
 
 brew update
-# brew bundle install
+brew bundle install
 brew cleanup
 
 echo 'export PATH="/home/user/miniconda3/bin:$PATH"' >> ~/.zshrc
