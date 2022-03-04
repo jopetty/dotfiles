@@ -63,5 +63,6 @@ done
 ###############################################################################
 
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+find . -name defaults.sh | while read defaults ; do sh -c "${defaults}" ; done
 
 source ~/.zshrc
