@@ -25,9 +25,12 @@ cask "visual-studio-code"
 cask "zoom"
 
 # Install CLI apps
+brew "coreutils"
+brew "gh"
 brew "git"
 brew "r"
 brew "screen"
+brew "speedtest-cli"
 brew "tree" # display directories as trees
 brew "wget"
 brew "zola" # static site generator
