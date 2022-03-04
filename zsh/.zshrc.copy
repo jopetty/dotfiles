@@ -1,1 +1,18 @@
+export ZSH=$HOME/.dotfiles
+
+# Store env variables in ~/.localrc to prevent any private info from being 
+# tracked in git
+if [[ -a ~/.localrc ]]
+then
+  source ~/.localrc
+fi
+
+typeset -U config_files
+config_files=($ZSH/**/*.zsh)
+
+for path_file in ${(M)config_files:#*/path.zsh}
+do
+  source $path_file
+done
+
 alias ls='ls -G'
