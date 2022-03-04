@@ -5,5 +5,17 @@
 [core]
   excludesfile = "~/.gitignore"
 
+[url "https://github.com/"]
+  insteadOf = gh:
+
+[url "https://gist.github.com/"]
+  insteadOf = gist:
+  
+[color]
+  ui = true
+
+[credential]
+    helper = osxkeychain
+
 [init]
   defaultBranch = "main"
