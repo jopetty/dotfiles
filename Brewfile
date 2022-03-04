@@ -1,6 +1,9 @@
 cask_args appdir: "/Applications"
 
+tap "homebrew/bundle"
+tap "homebrew/cask" # macOS GUI applications
 tap "homebrew/core"
+tap "buo/cask-upgrade" # update cask GUI apps
 
 brew "mas"
 
@@ -12,10 +15,19 @@ mas "Parcel", id: 639968404
 mas "Slack", id: 803453959
 
 # Install GUI apps
-cask "google-chrome"
+cask "bartender" # arrange menu bar
+cask "docker" # containers & vms
+cask "iterm2" # better terminal
+cask "miniconda"
+cask "google-chrome" 
 cask "spotify"
 cask "visual-studio-code"
 cask "zoom"
 
 # Install CLI apps
+brew "git"
+brew "r"
+brew "screen"
+brew "tree" # display directories as trees
 brew "wget"
+brew "zola" # static site generator
