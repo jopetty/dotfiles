@@ -38,11 +38,9 @@ function nicecopy {
   cp $1 $2
 }
 
-
 ###############################################################################
 # Copy & Link Dotfiles                                                        #
 ###############################################################################
-
 
 # Symlink all *.symlink files
 for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink')
@@ -63,6 +61,5 @@ done
 ###############################################################################
 
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
-find . -name defaults.sh | while read defaults ; do sh -c "${defaults}" ; done
 
 source ~/.zshrc
