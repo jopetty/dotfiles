@@ -7,6 +7,7 @@ if test ! $(which brew); then
 fi
 
 brew update
+brew upgrade
 brew bundle install --file=~/Brewfile
 brew cleanup
 
