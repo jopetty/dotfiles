@@ -15,7 +15,7 @@ do
   source $path_file
 done
 
-alias ls='ls -Gp'
+alias ls='ls -GF'
 
 # ## autoload vcs and colors
 # autoload -Uz vcs_info
