@@ -17,15 +17,48 @@ done
 
 alias ls='ls -Gp'
 
-## autoload vcs and colors
+# ## autoload vcs and colors
+# autoload -Uz vcs_info
+# autoload -U colors && colors
+
+# # autoload -Uz vcs_info # enable vcs_info
+# precmd_vcs_info() { vcs_info }
+# precmd_functions+=( precmd_vcs_info )
+# setopt prompt_subst
+# zstyle ':vcs_info:git:*' formats '%F{white}(%b)%f '
+# zstyle ':vcs_info:*' enable git
+
+# PROMPT='%F{red}%~%f $vcs_info_msg_0_%B%#%b '
+
+
 autoload -Uz vcs_info
 autoload -U colors && colors
 
-# autoload -Uz vcs_info # enable vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-zstyle ':vcs_info:git:*' formats '%F{white}(%b)%f '
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' unstagedstr '%F{red}*'   # unstaged changes -> red*
+zstyle ':vcs_info:*' stagedstr '%F{yellow}+'  # staged changes -> yellow+
+zstyle ':vcs_info:*' actionformats \
+    '%F{5}%F{5}[%F{2}%b%F{3}|%F{1}%a%c%u%F{5}]%f '
+zstyle ':vcs_info:*' formats '(%b%c%u%%f) '
 zstyle ':vcs_info:*' enable git
+theme_precmd () {
+    vcs_info
+}
 
-PROMPT='%F{red}%~%f $vcs_info_msg_0_%B%%%b '
+# show hostinfo only if we are in an ssh session
+hostinfo=''
+if [[ -n $SSH_TTY ]]; then
+  hostinfo="%B%F{red}$HOST%f%b "
+fi
+
+# only show user (in bold red) if it is root
+userinfo=''
+if [[ $USER == 'root' ]]; then
+  userinfo="%B%F{red}${USER}%f%b "
+fi
+setopt prompt_subst
+PROMPT_END="%#"
+# show returncode of last command only when <> 0
+PROMPT='${hostinfo}${userinfo}%F{yellow}%~%f ${vcs_info_msg_0_}%B%(?..%F{red}[%?] )%b%B${PROMPT_END}%b '
+autoload -U add-zsh-hook
+add-zsh-hook precmd theme_precmd
