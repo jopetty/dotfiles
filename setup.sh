@@ -62,4 +62,4 @@ done
 
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
 
-source ~/.zshrc
+exec zsh
