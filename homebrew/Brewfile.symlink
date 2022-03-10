@@ -6,6 +6,7 @@ tap "buo/cask-upgrade" # update cask GUI apps
 
 # Install CLI apps
 brew "coreutils" # newer versions of core utilities
+brew "exa" # `ls` / `tree` replacement
 brew "gh" # github CLI
 brew "git" # more recent git than Xcode may provide
 brew "htop" 
@@ -16,7 +17,6 @@ brew "r" # R programming language
 brew "screen"
 brew "speedtest-cli"
 brew "tldr" # tldr.io, summarized version of `man`
-brew "tree" # display directories as trees
 brew "wget"
 brew "zola" # static site generator
 
@@ -32,6 +32,7 @@ cask "mactex"
 cask "miniconda" # minimal anaconda 
 cask "google-chrome" 
 cask "sf-symbols"
+cask "skim"
 cask "spotify"
 cask "visual-studio-code"
 cask "zoom"
