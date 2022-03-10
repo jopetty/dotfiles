@@ -1,6 +1,7 @@
 cask_args appdir: "/Applications"
 
 tap "homebrew/cask" # macOS GUI applications
+tap "homebrew/cask-fonts" 
 tap "buo/cask-upgrade" # update cask GUI apps
 
 # Install CLI apps
@@ -10,26 +11,58 @@ brew "git" # more recent git than Xcode may provide
 brew "htop" 
 brew "mas" # Mac App Store CLI
 brew "micro" # better terminal editor
+brew "pre-commit"
 brew "r" # R programming language
 brew "screen"
 brew "speedtest-cli"
+brew "tldr" # tldr.io, summarized version of `man`
 brew "tree" # display directories as trees
 brew "wget"
 brew "zola" # static site generator
 
-# Install apps through Mac App Store
-mas "Fantastical", id: 435003921
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Parcel", id: 639968404
-mas "Slack", id: 803453959
-
 # Install GUI apps
 cask "bartender" # arrange menu bar
 cask "docker" # containers & vms
+cask "font-cochineal"
+cask "font-computer-modern"
+cask "font-ibm-plex"
+cask "font-input"
 cask "iterm2" # better terminal
+cask "mactex"
 cask "miniconda" # minimal anaconda 
 cask "google-chrome" 
+cask "sf-symbols"
 cask "spotify"
 cask "visual-studio-code"
 cask "zoom"
+
+# Install apps through Mac App Store
+mas "about-blank", id: 1239207203
+mas "AdGuard for Safari", id: 1440147259
+mas "Affinity Designer", id: 824171161
+mas "Affinity Photo", id: 824183456
+mas "Affinity Publisher", id: 881418622
+mas "Broadcasts", id: 1469995354
+mas "Dark Reader for Safari", id: 1438243180
+mas "Developer", id: 640199958
+mas "Drafts", id: 1435957248
+mas "Fantastical", id: 975937182
+mas "Final Cut Pro", id: 424389933
+mas "iA Writer", id: 775737590
+mas "Instapaper", id: 288545208
+mas "Instapaper Save", id: 1481302432
+mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
+mas "Logic Pro", id: 634148309
+mas "Magnet", id: 441258766
+mas "Messenger", id: 1480068668
+mas "Microsoft Outlook", id: 985367838
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "Numbers", id: 409203825
+mas "OmniFocus", id: 1346203938
+mas "Pages", id: 409201541
+mas "Slack", id: 803453959
+mas "TaskPaper", id: 1090940630
+mas "Things", id: 904280696
+mas "WhatsApp", id: 1147396723
