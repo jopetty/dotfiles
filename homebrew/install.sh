@@ -8,6 +8,7 @@ fi
 
 brew update
 brew upgrade
+brew tap homebrew/bundle
 brew bundle install --file=~/Brewfile
 brew cleanup
 

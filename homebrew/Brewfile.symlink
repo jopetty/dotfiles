@@ -1,18 +1,16 @@
 cask_args appdir: "/Applications"
 
-tap "homebrew/bundle"
 tap "homebrew/cask" # macOS GUI applications
-tap "homebrew/core"
 tap "buo/cask-upgrade" # update cask GUI apps
 
 # Install CLI apps
 brew "coreutils" # newer versions of core utilities
 brew "gh" # github CLI
-brew "git" 
-brew "htop"
+brew "git" # more recent git than Xcode may provide
+brew "htop" 
 brew "mas" # Mac App Store CLI
 brew "micro" # better terminal editor
-brew "r"
+brew "r" # R programming language
 brew "screen"
 brew "speedtest-cli"
 brew "tree" # display directories as trees
@@ -30,7 +28,7 @@ mas "Slack", id: 803453959
 cask "bartender" # arrange menu bar
 cask "docker" # containers & vms
 cask "iterm2" # better terminal
-cask "miniconda"
+cask "miniconda" # minimal anaconda 
 cask "google-chrome" 
 cask "spotify"
 cask "visual-studio-code"
