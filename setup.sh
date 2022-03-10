@@ -16,6 +16,10 @@ function nicelink {
   fi
 
   if [[ -f "$2" ]] || [[ -L "$2" ]] || [[ -d "$2" ]]; then
+    if [[ "$(readlink $2)" == "$1" ]]; then 
+      info "$2 is already linked to $1"
+      return 0
+    fi
     oldpath=$2:t
     warn "Overwriting $2 (backup at ~/.dotfiles_backup/$oldpath)"
     mv $2 ~/.dotfiles_backup/
