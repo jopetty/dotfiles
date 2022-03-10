@@ -5,7 +5,19 @@ tap "homebrew/cask" # macOS GUI applications
 tap "homebrew/core"
 tap "buo/cask-upgrade" # update cask GUI apps
 
-brew "mas"
+# Install CLI apps
+brew "coreutils" # newer versions of core utilities
+brew "gh" # github CLI
+brew "git" 
+brew "htop"
+brew "mas" # Mac App Store CLI
+brew "micro" # better terminal editor
+brew "r"
+brew "screen"
+brew "speedtest-cli"
+brew "tree" # display directories as trees
+brew "wget"
+brew "zola" # static site generator
 
 # Install apps through Mac App Store
 mas "Fantastical", id: 435003921
@@ -23,15 +35,3 @@ cask "google-chrome"
 cask "spotify"
 cask "visual-studio-code"
 cask "zoom"
-
-# Install CLI apps
-brew "coreutils"
-brew "gh"
-brew "git"
-brew "micro"
-brew "r"
-brew "screen"
-brew "speedtest-cli"
-brew "tree" # display directories as trees
-brew "wget"
-brew "zola" # static site generator
