@@ -21,6 +21,7 @@ brew "wget"
 brew "zola" # static site generator
 
 # Install GUI apps
+cask "balance-lock" # keep bluetooth audio balanced
 cask "bartender" # arrange menu bar
 cask "docker" # containers & vms
 cask "font-cochineal"
