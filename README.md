@@ -17,7 +17,7 @@ Each top-level directory in this repository (e.g., `git` or `homebrew`) is a _mo
 
 ## A note on `.zshrc`
 
-`.zshrc` is the main zsh config file, and is repsonsible for quite a lot of the functionality here. In particular, it is `.zshrc` which processes the `path.zsh` files, not the `setup.sh` script. Additionally, `.zshrc` is responsible for:
+`.zshrc` is the main zsh config file, and is responsible for quite a lot of the functionality here. In particular, it is `.zshrc` which processes the `path.zsh` files, not the `setup.sh` script. Additionally, `.zshrc` is responsible for:
 - Loading any local environment variables from `~/.localrc` (which should never be tracked by git for privacy)
 - Establishing aliases
-- Formatting the propmt
+- Formatting the prompt
