@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if test ! "$(uname)" = "Darwin"
+  then
+  exit 0
+fi
+
 # Install Homebrew if needed
 if test ! $(which brew); then
   echo "\r Installing Homebrew..."
