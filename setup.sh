@@ -64,6 +64,7 @@ done
 # Run Install Scripts                                                         #
 ###############################################################################
 
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+# Find all install scripts, sort by parent dir, and run them
+find . -name install.sh | sort -d | while read installer ; do sh -c "${installer}" ; done
 
 exec zsh

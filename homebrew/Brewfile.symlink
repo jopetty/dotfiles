@@ -8,8 +8,9 @@ tap "buo/cask-upgrade" # update cask GUI apps
 brew "coreutils" # newer versions of core utilities
 brew "exa" # `ls` / `tree` replacement
 brew "gh" # github CLI
+brew "ghcup" # Haskell installer / package manager, see https://www.haskell.org/ghcup/ and https://stackoverflow.com/a/73173644/5609619
 brew "git" # more recent git than Xcode may provide
-brew "htop" 
+brew "htop"
 brew "mas" # Mac App Store CLI
 brew "micro" # better terminal editor
 brew "pre-commit"
@@ -28,10 +29,11 @@ cask "font-cochineal"
 cask "font-computer-modern"
 cask "font-ibm-plex"
 cask "font-input"
+cask "google-chrome" 
 cask "iterm2" # better terminal
 cask "mactex"
 cask "miniconda" # minimal anaconda 
-cask "google-chrome" 
+cask "racket"
 cask "sf-symbols"
 cask "skim"
 cask "spotify"
