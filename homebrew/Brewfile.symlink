@@ -11,6 +11,7 @@ brew "gh" # github CLI
 brew "ghcup" # Haskell installer / package manager, see https://www.haskell.org/ghcup/ and https://stackoverflow.com/a/73173644/5609619
 brew "git" # more recent git than Xcode may provide
 brew "htop"
+brew "imagemagick"
 brew "mas" # Mac App Store CLI
 brew "micro" # better terminal editor
 brew "pre-commit"
