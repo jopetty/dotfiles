@@ -1,4 +1,4 @@
-export ZSH=$HOME/.dotfiles
+export ZSH=$HOME/dotfiles
 
 # Store env variables in ~/.localrc to prevent any private info from being 
 # tracked in git
@@ -15,8 +15,8 @@ do
   source $path_file
 done
 
-alias ls='exa --classify'
-alias tree='exa --tree'
+alias ls='eza --classify'
+alias tree='eza --tree'
 
 autoload -Uz vcs_info
 autoload -U colors && colors
