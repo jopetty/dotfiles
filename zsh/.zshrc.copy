@@ -46,6 +46,6 @@ fi
 setopt prompt_subst
 PROMPT_END="%#"
 # show returncode of last command only when <> 0
-PROMPT='${hostinfo}${userinfo}%F{yellow}%~%f ${vcs_info_msg_0_}%B%(?..%F{red}[%?] )%b%B${PROMPT_END}%b '
+PROMPT='${hostinfo}${userinfo}%F{yellow}%~%f ${vcs_info_msg_0_}%B%(?..%F{red}[%?] )%b%B${PROMPT_END}%b%f '
 autoload -U add-zsh-hook
 add-zsh-hook precmd theme_precmd
