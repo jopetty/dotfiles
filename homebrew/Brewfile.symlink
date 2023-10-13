@@ -6,7 +6,7 @@ tap "buo/cask-upgrade" # update cask GUI apps
 
 # Install CLI apps
 brew "coreutils" # newer versions of core utilities
-brew "exa" # `ls` / `tree` replacement
+brew "eza" # `ls` / `tree` replacement
 brew "gh" # github CLI
 brew "ghcup" # Haskell installer / package manager, see https://www.haskell.org/ghcup/ and https://stackoverflow.com/a/73173644/5609619
 brew "git" # more recent git than Xcode may provide
@@ -23,6 +23,7 @@ brew "wget"
 brew "zola" # static site generator
 
 # Install GUI apps
+cask "anki"
 cask "balance-lock" # keep bluetooth audio balanced
 cask "bartender" # arrange menu bar
 cask "docker" # containers & vms
@@ -30,11 +31,12 @@ cask "font-cochineal"
 cask "font-computer-modern"
 cask "font-ibm-plex"
 cask "font-input"
+cask "font-inter"
 cask "google-chrome" 
 cask "iterm2" # better terminal
-cask "mactex"
 cask "miniconda" # minimal anaconda 
 cask "racket"
+cask "raycast"
 cask "sf-symbols"
 cask "skim"
 cask "spotify"
@@ -65,10 +67,9 @@ mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
-mas "OmniFocus", id: 1346203938
 mas "Pages", id: 409201541
 mas "Slack", id: 803453959
 mas "TaskPaper", id: 1090940630
 mas "Things", id: 904280696
 mas "Velja", id: 1607635845
-mas "WhatsApp", id: 1147396723
+mas "Space Gremlin", id: 414515628
