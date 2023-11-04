@@ -16,6 +16,7 @@ brew "mas" # Mac App Store CLI
 brew "micro" # better terminal editor
 brew "pre-commit"
 brew "r" # R programming language
+brew "ruby"
 brew "screen"
 brew "speedtest-cli"
 brew "tldr" # tldr.io, summarized version of `man`
