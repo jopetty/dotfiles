@@ -17,11 +17,11 @@ brew "micro" # better terminal editor
 brew "pre-commit"
 brew "r" # R programming language
 brew "ruby"
+brew "rust"
 brew "screen"
 brew "speedtest-cli"
 brew "tldr" # tldr.io, summarized version of `man`
 brew "wget"
-brew "zola" # static site generator
 
 # Install GUI apps
 cask "anki"
@@ -35,6 +35,7 @@ cask "font-input"
 cask "font-inter"
 cask "google-chrome" 
 cask "iterm2" # better terminal
+cask "mactex"
 cask "miniconda" # minimal anaconda 
 cask "racket"
 cask "raycast"
