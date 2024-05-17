@@ -22,6 +22,7 @@ brew "screen"
 brew "speedtest-cli"
 brew "tldr" # tldr.io, summarized version of `man`
 brew "wget"
+brew "uv"
 
 # Install GUI apps
 cask "anki"
