@@ -29,6 +29,8 @@ cask "anki"
 cask "balance-lock" # keep bluetooth audio balanced
 cask "bartender" # arrange menu bar
 cask "docker" # containers & vms
+cask "font-cascadia-code"
+cask "font-cascadia-mono"
 cask "font-cochineal"
 cask "font-computer-modern"
 cask "font-ibm-plex"
@@ -38,6 +40,7 @@ cask "google-chrome"
 cask "iterm2" # better terminal
 cask "mactex"
 cask "miniconda" # minimal anaconda 
+cask "obsidian"
 cask "racket"
 cask "raycast"
 cask "sf-symbols"
