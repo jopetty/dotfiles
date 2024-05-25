@@ -1,0 +1,25 @@
+
+:root { 
+    --normal-weight: 500; 
+} 
+
+body {
+    /* --list-spacing: 0.3rem; */
+    --line-height-normal: 1.6;
+    /* --font-text-override: "iA Writer Quattro V";
+    --font-monospace-override: "iA Writer Mono V";
+    --font-interface-override: "IBM Plex Sans"; */
+    --blockquote-border-thickness: 2px;
+    --font-normal: 500;
+    --font-light: 500;
+    --font-extralight: 500;
+    --font-thin: 500;
+}
+
+span.cm-hmd-internal-link, span.cm-link {
+    font-weight: 600;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header {
+    padding-bottom: calc(0.5 * var(--p-spacing));
+}
