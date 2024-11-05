@@ -1,5 +1,3 @@
-export ZSH=$HOME/dotfiles
-
 # Store env variables in ~/.localrc to prevent any private info from being 
 # tracked in git
 if [[ -a ~/.localrc ]]
@@ -7,16 +5,14 @@ then
   source ~/.localrc
 fi
 
-typeset -U config_files
-config_files=($ZSH/**/*.zsh)
-
-for path_file in ${(M)config_files:#*/path.zsh}
-do
-  source $path_file
-done
-
 alias ls='eza --classify'
 alias tree='eza --tree'
+
+cdj() {
+    pushd ~/Documents/*/*/${$1}*
+}
+
+# Prompt formatting
 
 autoload -Uz vcs_info
 autoload -U colors && colors
@@ -50,7 +46,12 @@ PROMPT='${hostinfo}${userinfo}%F{yellow}%~%f ${vcs_info_msg_0_}%B%(?..%F{red}[%?
 autoload -U add-zsh-hook
 add-zsh-hook precmd theme_precmd
 
+# Path exports
+export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/opt/homebrew/lib/ruby/gems/3.2.0/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="/opt/homebrew/bin/ghcup:$PATH"
+
+# opam configuration
+[[ ! -r /Users/jacksonpetty/.opam/opam-init/init.zsh ]] || source /Users/jacksonpetty/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
