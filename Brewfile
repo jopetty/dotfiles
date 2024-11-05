@@ -27,31 +27,31 @@ brew "uv"                 # Python dev tools
 brew "zellij"             # terminal multiplexer
 
 # Install GUI apps
-cask "anki"                     # flashcards
-cask "balance-lock"             # keep bluetooth audio balanced
-cask "bartender"                # arrange menu bar
-cask "docker"                   # containers & vms
-cask "font-cascadia-code"       # Microsoft's Cascadia Code font
-cask "font-cascadia-mono"       # Microsoft's Cascadia Mono font (no ligatures)
-cask "font-cochineal"           # Cochineal font (nice serif)
-cask "font-computer-modern"     # TeX's Computer Modern font, for non-TeX use
-cask "font-ibm-plex-sans"       # IBM's Plex fonts
-cask "font-ibm-plex-sans-condensed
-cask "font-ibm-plex-mono"
-cask "font-ibm-plex-serif"
-cask "font-input"               # Input font (serif, sans, mono)
-cask "font-inter"               # Inter font (sans)
-cask "google-chrome"            # web browser
-cask "iterm2"                   # better terminal
-cask "mactex"                   # LaTeX distribution
-cask "racket"                   # Racket programming language
-cask "raycast"                  # macOS launcher
-cask "sf-symbols"               # Apple's SF Symbols App
-cask "skim"                     # PDF reader w/ dark mode
-cask "spotify"                  # music streaming
-cask "visual-studio-code"       # code editor
-cask "zed"                      # zed editor
-cask "zoom"                     # video conferencing
+cask "anki"                         # flashcards
+cask "balance-lock"                 # keep bluetooth audio balanced
+cask "bartender"                    # arrange menu bar
+cask "docker"                       # containers & vms
+cask "font-cascadia-code"           # Microsoft's Cascadia Code font
+cask "font-cascadia-mono"           # Microsoft's Cascadia Mono font (no ligatures)
+cask "font-cochineal"               # Cochineal font (nice serif)
+cask "font-computer-modern"         # TeX's Computer Modern font, for non-TeX use
+cask "font-ibm-plex-sans"           # IBM Plex font (sans)
+cask "font-ibm-plex-sans-condensed  # IBM Plex font (sans)
+cask "font-ibm-plex-mono"           # IBM Plex font (mono)
+cask "font-ibm-plex-serif"          # IBM Plex font (serif)
+cask "font-input"                   # Input font (serif, sans, mono)
+cask "font-inter"                   # Inter font (sans)
+cask "google-chrome"                # web browser
+cask "iterm2"                       # better terminal
+cask "mactex"                       # LaTeX distribution
+cask "racket"                       # Racket programming language
+cask "raycast"                      # macOS launcher
+cask "sf-symbols"                   # Apple's SF Symbols App
+cask "skim"                         # PDF reader w/ dark mode
+cask "spotify"                      # music streaming
+cask "visual-studio-code"           # code editor
+cask "zed"                          # zed editor
+cask "zoom"                         # video conferencing
 
 # Install apps through Mac App Store
 mas "about-blank", id: 1239207203              # minimal page blocker for safari
