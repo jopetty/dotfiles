@@ -67,9 +67,6 @@ brew cleanup
 ghcup install ghc && ghcup set ghc  # Haskell (via ghcup)
 raco install pollen                 # Pollen (via raco/racket)
 
-# iterm2
-nicelink $CURRENT_DIR/iterm2.plist $HOME/Library/Preferences/com.googlecode.iterm2.plist
-
 # Git
 nicecopy $CURRENT_DIR/gitconfig $HOME/.gitconfig
 nicelink $CURRENT_DIR/gitignore $HOME/.gitignore
