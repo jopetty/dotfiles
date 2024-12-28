@@ -8,3 +8,4 @@ adjust-cell-height = 10%
 macos-titlebar-style = tabs
 window-padding-x = 4
 window-padding-y = 4
+window-colorspace = display-p3
