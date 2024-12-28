@@ -71,7 +71,7 @@ nicecopy $CURRENT_DIR/gitconfig $HOME/.gitconfig
 nicelink $CURRENT_DIR/gitignore $HOME/.gitignore
 
 # Ghostty
-nicelink $CURRENT_DIR/ghostty-config $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+ln -f $CURRENT_DIR/ghostty-config $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
 
 ###############################################################################
 # fin                                                                         #
