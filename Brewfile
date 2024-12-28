@@ -13,7 +13,7 @@ brew "htop"               # better `top`
 brew "imagemagick"        # TUI image processing
 brew "mas"                # Mac App Store CLI
 brew "micro"              # better terminal editor
-brwe "neovim"             # better vim
+brew "neovim"             # better vim
 brew "pre-commit"         # pre-commit hooks
 brew "r"                  # R programming language
 brew "ripgrep"            # Regex directory searching
@@ -42,6 +42,7 @@ cask "font-ibm-plex-serif"          # IBM Plex font (serif)
 cask "font-input"                   # Input font (serif, sans, mono)
 cask "font-inter"                   # Inter font (sans)
 cask "google-chrome"                # web browser
+cask "ghostty"                      # Ghostty terminal
 cask "iterm2"                       # better terminal
 cask "mactex"                       # LaTeX distribution
 cask "racket"                       # Racket programming language

@@ -46,7 +46,6 @@ function nicecopy {
   cp $1 $2
 }
 
-
 ###############################################################################
 # Installation                                                                #
 ###############################################################################
@@ -64,12 +63,15 @@ brew bundle install --file=~/Brewfile
 brew cleanup
 
 # After Homebrew
-ghcup install ghc && ghcup set ghc  # Haskell (via ghcup)
-raco install pollen                 # Pollen (via raco/racket)
+ghcup install ghc && ghcup set ghc # Haskell (via ghcup)
+raco install pollen                # Pollen (via raco/racket)
 
 # Git
 nicecopy $CURRENT_DIR/gitconfig $HOME/.gitconfig
 nicelink $CURRENT_DIR/gitignore $HOME/.gitignore
+
+# Ghostty
+nicelink $CURRENT_DIR/ghostty-config $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
 
 ###############################################################################
 # fin                                                                         #
