@@ -15,6 +15,7 @@ window-padding-y = 4
 window-padding-balance = true
 window-colorspace = display-p3
 clipboard-read = allow
+bold-is-bright = true
 
 # Copy selected text to clipboard automatically
 copy-on-select = true
