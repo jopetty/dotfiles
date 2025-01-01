@@ -1,6 +1,8 @@
 font-family = TX-02
 font-style = Bold SemiCondensed
 font-style-bold = Black SemiCondensed
+font-style-italic = Bold SemiCondensed Oblique
+font-style-bold-italic=  Black SemiCondensed Oblique
 theme = catppuccin-mocha
 font-size = 14
 cursor-style = block
@@ -10,9 +12,12 @@ adjust-cell-height = 10%
 macos-titlebar-style = tabs
 window-padding-x = 4
 window-padding-y = 4
+window-padding-balance = true
 window-colorspace = display-p3
+clipboard-read = allow
 
 # Copy selected text to clipboard automatically
 copy-on-select = true
+cursor-click-to-move = true
 
 quit-after-last-window-closed = true
